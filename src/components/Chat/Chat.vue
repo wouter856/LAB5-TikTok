@@ -33,5 +33,7 @@
 </template>
 
 <style scoped>
-
+    ul li {
+        list-style-type: none;
+    }
 </style>

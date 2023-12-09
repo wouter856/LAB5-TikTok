@@ -10,6 +10,20 @@
   //listen for emits
   const updateVideo = (description) => {
     newDescription.value = description;
+
+    if (description === 'No space on Metro? 🦄') {
+      document.querySelector('.video').classList.remove('random');
+      document.querySelector('.video').classList.remove('none');
+      document.querySelector('.video').classList.add('sami');
+    } else if (description === 'Burger Disco Duty') {
+      document.querySelector('.video').classList.remove('sami');
+      document.querySelector('.video').classList.remove('none');
+      document.querySelector('.video').classList.add('random');
+    } else {
+      document.querySelector('.video').classList.remove('sami');
+      document.querySelector('.video').classList.remove('random');
+      document.querySelector('.video').classList.add('none');
+    }
   };
 
   const updateUsername = (username) => {
@@ -38,11 +52,19 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    background-image: url(./assets/sami.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000000;
+  }
+  .video.sami {
+    background-image: url('./assets/sami.jpg');
+  }
+  .video.random {
+    background-image: url('./assets/random.jpg');
+  }
+  .video.none {
+    background-image: none;
   }
   .side {
     background-color: #f2f2f2;
