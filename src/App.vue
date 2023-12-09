@@ -67,7 +67,7 @@
     background-image: none;
   }
   .side {
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
   }
 </style>
