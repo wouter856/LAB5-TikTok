@@ -1,11 +1,11 @@
 <script setup>
-    //define properties
-    const props = defineProps(['description']);
+  //define properties
+  const props = defineProps(['description', 'username']);
 </script>
 
 <template>
   <div>
-    <h3>Username</h3>
+    <h3>{{ username }}</h3>
     <p>{{ description }}</p>
   </div>
 </template>

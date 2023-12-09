@@ -2,7 +2,7 @@
     import { ref, reactive, onMounted } from 'vue';
 
     //define emits
-    const emits = defineEmits(['update:videoURL']);
+    const emits = defineEmits(['update:videoDescription', 'update:videoUsername']);
     
     const videoURL = ref("");
     let videos = reactive({
@@ -18,6 +18,7 @@
                 videoURL.value = videos.data[0].video;
 
                 emits('update:videoDescription', videos.data[0].description);
+                emits('update:videoUsername', videos.data[0].username);
             });
     });
 </script>
@@ -29,5 +30,8 @@
 </template>
 
 <style scoped>
-
+  video {
+    width: 394px;
+    height: auto;
+  }
 </style>

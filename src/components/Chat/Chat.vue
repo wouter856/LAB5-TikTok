@@ -4,7 +4,12 @@
 
     let message = ref(''); //int, string, boolean
     let allMessages = reactive({
-        data: ["Heel", "even", "simpel", "doen"],
+        data: [
+        { username: "Bert", message: "Heel" },
+        { username: "Jan", message: "even" },
+        { username: "Dirk", message: "simpel" },
+        { username: "Tom", message: "doen" }
+        ],
     }); //array, object
 
     //function sendMessage
@@ -17,7 +22,7 @@
 <template>
   <div>
     <ul>
-        <li v-for="m in allMessages.data">{{ m }}</li>
+        <li v-for="m in allMessages.data"><h3>{{ m.username }}</h3><p>{{ m.message }}</p></li>
     </ul>
 
     <div>
