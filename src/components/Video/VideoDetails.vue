@@ -12,7 +12,7 @@
       </div>
       <a href="#">Follow</a>
     </div>
-    <p>{{ description }} <span>#Vomit</span> <span> #BXL</span> <span> #Funny</span></p>
+    <p>{{ description }} <span>#FYP</span> <span> #BXL</span> <span> #Funny</span></p>
   </div>
 </template>
 
@@ -21,7 +21,6 @@
     padding: 10px;
     width: calc(92% - 20px);
     margin-top: 20px;
-    margin-bottom: 40px;
     margin-left: 4%;
     background-color: #f2f2f2;
     border-radius: 10px;
@@ -46,6 +45,14 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 4px;
+  } 
   span {
     font-weight: 600;
     color: #0437f0;

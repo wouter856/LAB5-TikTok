@@ -37,7 +37,6 @@ onMounted(() => {
     fetch("https://api.jsonbin.io/v3/b/6548ef9954105e766fcc2c15")
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
             videos.data = data.record.videos;
             updateVideo();
         });
